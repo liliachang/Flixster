@@ -14,36 +14,49 @@
 
         <Button
             android:layout_width="36dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="&lt;"
             android:id="@+id/btBack"
             android:textColor="#878787"
-            android:background="#000000" />
+            android:background="#000000"
+            android:onClick="onSubmit"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/tvTitle"
             android:textColor="#fefefe"
-            android:background="#000000" />
+            android:background="#000000"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:textAlignment="center" />
     </LinearLayout>
 
-    <ImageView
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ivPoster"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/tvPopularity"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:background="#000000"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <RatingBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rbVote_Av"
-        android:background="#000000"
-        android:layout_below="@+id/linearLayout"
+        android:background="#ffffff"
+        android:visibility="visible"
+        android:stepSize="1"
+        android:layout_below="@+id/tvPopularity"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:numStars="5" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="match_parent"
@@ -52,12 +65,13 @@
         android:layout_weight="1.04"
         android:background="#000000"
         android:textColor="#ffffff"
-        android:layout_below="@+id/rbVote_Av"
-        android:layout_toRightOf="@+id/ivPoster"
+        android:padding="10dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:padding="10dp" />
+        android:layout_below="@+id/rbVote_Av"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp" />
 
 
 </RelativeLayout>
