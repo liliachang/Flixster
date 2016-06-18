@@ -38,25 +38,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvPopularity"
-        android:textColor="#ffffff"
+        android:textColor="#d4d4d4"
         android:gravity="center_horizontal"
         android:background="#000000"
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <RatingBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/rbVote_Av"
-        android:background="#ffffff"
-        android:visibility="visible"
-        android:stepSize="1"
-        android:layout_below="@+id/tvPopularity"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentEnd="true"
+        android:textSize="13sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -65,13 +55,14 @@
         android:layout_weight="1.04"
         android:background="#000000"
         android:textColor="#ffffff"
-        android:padding="10dp"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/rbVote_Av"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:paddingEnd="5dp"
-        android:paddingStart="5dp" />
+        android:paddingStart="5dp"
+        android:layout_below="@+id/tvPopularity"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp" />
 
 
 </RelativeLayout>
