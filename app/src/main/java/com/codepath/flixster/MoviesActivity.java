@@ -87,6 +87,7 @@ public class MoviesActivity extends AppCompatActivity {
         i.putExtra("backdrop", movie.getBackdropPath());
         i.putExtra("vote_average", movie.getVote_average());
         i.putExtra("release_date", movie.release_date);
+        i.putExtra("popularity", movie.popularity);
         startActivityForResult(i, REQUEST_CODE);
     }
 }

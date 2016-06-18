@@ -25,13 +25,13 @@ public class InfoItem extends AppCompatActivity {
         TextView tvOverview = (TextView) findViewById(R.id.tvOverview);
         tvOverview.append(overview);
 
-        double vote_average = getIntent().getIntExtra("vote_average", -1);
+        String vote_average = getIntent().getStringExtra("vote_average");
         //RatingBar rbVote_Av = (RatingBar) findViewById(R.id.rbVote_Av);
         //rbVote_Av.setIsIndicator(true);
         //rbVote_Av.setRating((float)vote_average);
 
         String release_date = getIntent().getStringExtra("release_date");
-        int popularity = (int) (getIntent().getDoubleExtra("popularity", -1));
+        String popularity = getIntent().getStringExtra("popularity");
         TextView tvPopularity = (TextView) findViewById(R.id.tvPopularity);
         tvPopularity.append("Release Date: " + release_date + ". Rating: " + vote_average + ". Popularity: " + popularity);
 
